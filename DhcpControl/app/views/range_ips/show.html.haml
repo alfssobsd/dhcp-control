@@ -1,0 +1,32 @@
+- content_for :breadcrumb do
+  %li
+    = link_to "Server (#{@server.name})", servers_path
+    %span.divider /
+  %li
+    = link_to "Subnet (#{@subnet.net})", server_subnets_path
+    %span.divider /    
+  %li
+    = link_to "Range IP (#{@range_ip.ip_start} - #{@range_ip.ip_end})", server_subnet_range_ips_path
+    %span.divider /
+  %li.active
+    Show
+
+- content_for :sidebar do
+  %h2 Ranges Show
+  %h4 
+    Subnet: 
+    "#{@subnet.net}"
+
+%p#notice= notice
+%p
+  %b Subnet:
+  = @range_ip.subnet_id
+%p
+  %b Ip start:
+  = @range_ip.ip_start
+%p
+  %b Ip end:
+  = @range_ip.ip_end
+= link_to 'Edit', edit_server_subnet_range_ip_path(@server, @subnet, @range_ip)
+|
+\#{link_to 'Back', server_subnet_range_ips_path}

@@ -1,0 +1,23 @@
+= form_for([@server, @subnet, @group, @host]) do |f|
+  - if @host.errors.any?
+    .alert-message.block-message.error
+      %h2
+        = pluralize(@host.errors.count, "error")
+        prohibited this host from being saved:
+      %ul
+        - @host.errors.full_messages.each do |msg|
+          %li= msg
+  .clearfix{:class => !( f.object.errors[:name].empty?) ? "error" : nil}
+    = f.label :name
+    .input
+      = f.text_field :name
+  .clearfix{:class => !( f.object.errors[:ip].empty?) ? "error" : nil}
+    = f.label :ip
+    .input
+      = f.text_field :ip
+  .clearfix{:class => !( f.object.errors[:mac].empty?) ? "error" : nil}
+    = f.label :mac
+    .input
+      = f.text_field :mac
+  .dialogButton
+    = f.submit :class => "btn primary"

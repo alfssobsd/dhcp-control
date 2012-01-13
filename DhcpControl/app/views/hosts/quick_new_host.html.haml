@@ -1,0 +1,38 @@
+- content_for :breadcrumb do
+  %li
+    = link_to "Server (#{@server.name})", servers_path
+    %span.divider /
+  %li.active
+    Create Host
+
+- content_for :sidebar do
+  %h2 Create Host
+  %h4
+    Server:
+    "#{@server.name}"
+
+  = link_to 'Subnets', server_subnets_path, :class => "btn icon arrowleft"
+
+= form_for([@server, @host], :url => server_quick_create_host_path) do |f|
+  - if @host.errors.any?
+    .alert-message.block-message.error
+      %h2
+        = pluralize(@host.errors.count, "error")
+        prohibited this host from being saved:
+      %ul
+        - @host.errors.full_messages.each do |msg|
+          %li= msg
+  .clearfix{:class => !( f.object.errors[:name].empty?) ? "error" : nil}
+    = f.label :name
+    .input
+      = f.text_field :name
+  .clearfix{:class => !( f.object.errors[:ip].empty?) ? "error" : nil}
+    = f.label :ip
+    .input
+      = f.text_field :ip
+  .clearfix{:class => !( f.object.errors[:mac].empty?) ? "error" : nil}
+    = f.label :mac
+    .input
+      = f.text_field :mac
+  .dialogButton
+    = f.submit :class => "btn primary"

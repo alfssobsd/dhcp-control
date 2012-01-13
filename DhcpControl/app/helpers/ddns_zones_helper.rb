@@ -1,0 +1,2 @@
+module DdnsZonesHelper
+end

@@ -1,0 +1,15 @@
+- content_for :breadcrumb do
+  %li
+    = link_to "Server (#{@server.name})", servers_path
+    %span.divider /
+  %li.active
+    Edit
+
+- content_for :sidebar do
+  %h2 Server Edit
+  = link_to 'DDNS Keys', server_ddns_keys_path(@server), :class => "btn icon key right primary"
+  %br/
+  %br/
+  = link_to 'Back', servers_path, :class => "btn icon arrowleft"
+  
+= render 'form'

@@ -1,0 +1,24 @@
+- content_for :breadcrumb do
+  %li
+    = link_to "Server (#{@server.name})", servers_path
+    %span.divider /
+  %li
+    = link_to "Subnet (#{@subnet.net})", server_subnets_path
+    %span.divider /
+  %li
+    = link_to "DDNS Zone", server_subnet_ddns_zones_path
+    %span.divider /
+  %li
+    New
+
+
+- content_for :sidebar do
+  %h2 DDNS Zone Create
+  %h4 
+    Subnet: 
+    "#{@subnet.net}"
+  %br/
+  %br/
+  = link_to 'Back', server_subnet_ddns_zones_path, :class => "btn icon arrowleft"
+    
+= render 'form'

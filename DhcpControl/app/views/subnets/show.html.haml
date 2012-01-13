@@ -1,0 +1,30 @@
+- content_for :breadcrumb do
+  %li
+    = link_to "Server (#{@server.name})", servers_path
+    %span.divider /
+  %li
+    = link_to "Subnet (#{@subnet.net})", server_subnets_path
+    %span.divider /
+  %li.active
+    Show
+
+- content_for :sidebar do
+  %h2 Subnet Show
+  %h4 
+    Server: 
+    "#{@server.name}"
+    
+  = link_to 'DDNS Zones', server_subnet_ddns_zones_path(@server, @subnet)
+  %br/
+  = link_to 'Ranges IP', server_subnet_range_ips_path(@server, @subnet)
+  
+%p#notice= notice
+%p
+  %b Network:
+  = @subnet.net
+%p
+  %b Options:
+  = @subnet.options
+= link_to 'Edit', edit_server_subnet_path(@server, @subnet)
+|
+\#{link_to 'Back', server_subnets_path}

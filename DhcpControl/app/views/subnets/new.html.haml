@@ -1,0 +1,20 @@
+- content_for :breadcrumb do
+  %li
+    = link_to "Server (#{@server.name})", servers_path
+    %span.divider /
+  %li
+    = link_to "Subnet", server_subnets_path
+    %span.divider /
+  %li.active
+    New
+
+- content_for :sidebar do
+  %h2 Subnet Create 
+  %h4 
+    Server: 
+    "#{@server.name}"
+  %br/
+  %br/
+  = link_to 'Back', server_subnets_path, :class => "btn icon arrowleft"
+
+= render 'form'

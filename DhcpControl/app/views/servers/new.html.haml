@@ -1,0 +1,11 @@
+- content_for :breadcrumb do
+  %li
+    = link_to "Server", servers_path
+    %span.divider /
+  %li.active
+    New
+
+- content_for :sidebar do
+  %h2 Server New
+  
+= render 'form'

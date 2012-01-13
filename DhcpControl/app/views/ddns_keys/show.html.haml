@@ -1,0 +1,32 @@
+- content_for :breadcrumb do
+  %li
+    = link_to "Server (#{@server.name})", servers_path
+    %span.divider /
+  %li
+    = link_to "DDNS Keys (#{@ddns_key.name})", server_ddns_keys_path
+    %span.divider /
+  %li
+    Show
+
+- content_for :sidebar do
+  %h2 DDNS Key Show
+  %h4 
+    Server: 
+    "#{@server.name}"
+
+%p#notice= notice
+%p
+  %b Server:
+  = @ddns_key.server_id
+%p
+  %b Name:
+  = @ddns_key.name
+%p
+  %b Algorithm:
+  = @ddns_key.algorithm
+%p
+  %b Secret:
+  = @ddns_key.secret
+= link_to 'Edit', edit_server_ddns_key_path(@server, @ddns_key)
+|
+\#{link_to 'Back', server_ddns_keys_path}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+    <rabbit_host>rabbitmq.example.com</rabbit_host>
+    <rabbit_port>5672</rabbit_port>
+    <rabbit_vhost>/dhcp_control</rabbit_vhost>
+    <rabbit_user>dhcp_control</rabbit_user>
+    <rabbit_password>password_rabbit</rabbit_password>
+    <rest_api_url>http://localhost:3001</rest_api_url>
+    <rest_api_port>3001</rest_api_port>
+    <rest_api_token>api_token</rest_api_token>
+    <reat_api_server_id>1</reat_api_server_id>
+    <dhcp_dir>/etc/dhcp</dhcp_dir>
+    <dhcp_restart_cmd>/etc/init.d/dhcpd restart</dhcp_restart_cmd>
+</configuration>

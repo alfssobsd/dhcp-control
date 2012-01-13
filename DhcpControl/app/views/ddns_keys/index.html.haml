@@ -1,0 +1,42 @@
+:javascript
+  $(document).ready(function() { 
+    $("table#TableDDNSKey").tablesorter({ 
+      sortList: [[0,0]],
+    });
+  });
+
+- content_for :breadcrumb do
+  %li
+    = link_to "Server (#{@server.name})", servers_path
+    %span.divider /
+  %li
+    DDNS Keys
+
+- content_for :sidebar do
+  %h2 DDNS Keys List 
+  %h4 
+    Server: 
+    "#{@server.name}"
+  %p 
+    Number of keys: 
+    = @ddns_keys.count
+    
+  = link_to 'New Key', new_server_ddns_key_path, :class => "btn primary"
+  %br/
+  %br/
+  = link_to 'Back', servers_path, :class => "btn icon arrowleft"
+
+%table#TableDDNSKey.zebra-striped.bordered-table
+  %thead
+    %th Name
+    %th Algorithm
+    %th Secret
+    %th
+    %th
+  - @ddns_keys.each do |ddns_key|
+    %tr
+      %td= ddns_key.name
+      %td= ddns_key.algorithm
+      %td= ddns_key.secret
+      %td= link_to 'Edit', edit_server_ddns_key_path(@server, ddns_key)
+      %td= link_to 'Destroy', server_ddns_key_path(@server, ddns_key), confirm: 'Are you sure?', method: :delete

@@ -1,0 +1,20 @@
+!!!
+%html
+  %head
+    %title DhcpControl
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    .topbar
+      .topbar-inner
+        .container-fluid
+          %h3
+            = link_to "DHCP Control v#{version}", root_path, :class => "brand"
+          %ul.nav
+            %li{:class => ( params[:controller] == "about") ? "active" : nil}
+              = link_to "About", about_path
+
+    .container-fluid
+      .content
+        = yield

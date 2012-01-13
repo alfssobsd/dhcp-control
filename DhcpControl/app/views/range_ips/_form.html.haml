@@ -1,0 +1,19 @@
+= form_for([@server, @subnet, @range_ip]) do |f|
+  - if @range_ip.errors.any?
+    .alert-message.block-message.error
+      %h2
+        = pluralize(@range_ip.errors.count, "error")
+        prohibited this range_ip from being saved:
+      %ul
+        - @range_ip.errors.full_messages.each do |msg|
+          %li= msg
+  .clearfix{:class => !( f.object.errors[:ip_start].empty?) ? "error" : nil}
+    = f.label :ip_start
+    .input
+      = f.text_field :ip_start
+  .clearfix{:class => !( f.object.errors[:ip_end].empty?) ? "error" : nil}
+    = f.label :ip_end
+    .input
+      = f.text_field :ip_end
+  .dialogButton
+    = f.submit :class => "btn primary"

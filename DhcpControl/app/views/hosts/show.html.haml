@@ -1,0 +1,38 @@
+- content_for :breadcrumb do
+  %li
+    = link_to "Server (#{@server.name})", servers_path
+    %span.divider /
+  %li
+    = link_to "Subnet (#{@subnet.net})", server_subnets_path
+    %span.divider /
+  %li
+    = link_to "Group (#{@group.name})", server_subnet_groups_path
+    %span.divider /
+  %li
+    = link_to "Host (#{@host.name})", server_subnet_group_hosts_path
+    %span.divider /
+  %li
+    Show
+    
+- content_for :sidebar do
+  %h2 Host Show
+  %h4 
+    Group: 
+    "#{@group.name}"
+
+%p#notice= notice
+%p
+  %b Group:
+  = @host.group_id
+%p
+  %b Name:
+  = @host.name
+%p
+  %b Ip:
+  = @host.ip
+%p
+  %b Mac:
+  = @host.mac
+= link_to 'Edit', edit_server_subnet_group_host_path(@server, @subnet, @group, @host)
+|
+\#{link_to 'Back', server_subnet_group_hosts_path}

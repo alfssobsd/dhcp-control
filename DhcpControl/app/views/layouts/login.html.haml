@@ -1,0 +1,30 @@
+!!!
+%html
+  %head
+    %title DhcpControl
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    .topbar
+      .topbar-inner
+        .container-fluid
+          %h3 
+            = link_to "DHCP Control v#{version}", about_path, :class => "brand"
+          %ul.nav
+            %li
+              = link_to "About", about_path
+    
+    .container-fluid
+      .sidebar
+        #{h yield(:sidebar)}
+      .content
+        .hero-unit
+          %h1 DHCP Control
+          %p
+            ISC DHCP Managment Web UI.
+          %p
+          = link_to image_tag("logos/rails.png"), "http://rubyonrails.org"
+          = link_to image_tag("logos/120px-RabbitMQLogo.png"), "http://www.rabbitmq.com"
+        = yield
+          

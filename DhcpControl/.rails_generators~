@@ -1,0 +1,227 @@
+---
+sass:assets:
+- --force
+- --pretend
+- --quiet
+- --skip
+- --skip-namespace
+- --old-style-hash
+sass:scaffold:
+- --force
+- --pretend
+- --quiet
+- --skip
+- --skip-namespace
+- --old-style-hash
+jquery:install:
+- --force
+- --pretend
+- --quiet
+- --skip
+coffee:assets:
+- --force
+- --pretend
+- --quiet
+- --skip
+- --skip-namespace
+- --old-style-hash
+js:assets:
+- --force
+- --pretend
+- --quiet
+- --skip
+- --skip-namespace
+- --old-style-hash
+assets:
+- --force
+- --pretend
+- --quiet
+- --skip
+- --skip-namespace
+- --old-style-hash
+- --javascripts
+- --stylesheets
+- --javascript-engine=
+- --stylesheet-engine=
+controller:
+- --force
+- --pretend
+- --quiet
+- --skip
+- --skip-namespace
+- --old-style-hash
+- --template-engine=
+- --test-framework=
+- --helper
+- --assets
+generator:
+- --force
+- --pretend
+- --quiet
+- --skip
+- --skip-namespace
+- --old-style-hash
+- --namespace
+helper:
+- --force
+- --pretend
+- --quiet
+- --skip
+- --skip-namespace
+- --old-style-hash
+- --test-framework=
+integration_test:
+- --force
+- --pretend
+- --quiet
+- --skip
+- --skip-namespace
+- --old-style-hash
+- --integration-tool=
+migration:
+- --force
+- --pretend
+- --quiet
+- --skip
+- --skip-namespace
+- --old-style-hash
+- --orm=
+model:
+- --migration
+- --timestamps
+- --parent=
+- --indexes
+- --test-framework=
+- --fixture
+- --fixture-replacement=
+- --force
+- --pretend
+- --quiet
+- --skip
+- --skip-namespace
+- --old-style-hash
+- --orm=
+observer:
+- --test-framework=
+- --force
+- --pretend
+- --quiet
+- --skip
+- --skip-namespace
+- --old-style-hash
+- --orm=
+performance_test:
+- --force
+- --pretend
+- --quiet
+- --skip
+- --skip-namespace
+- --old-style-hash
+- --performance-tool=
+plugin:
+- --force
+- --pretend
+- --quiet
+- --skip
+- --skip-namespace
+- --old-style-hash
+- --tasks=
+- --generator
+- --test-framework=
+plugin_new:
+- --force
+- --pretend
+- --quiet
+- --skip
+- --help
+- --ruby=
+- --builder=
+- --template=
+- --skip-gemfile
+- --skip-bundle
+- --skip-git
+- --skip-active-record
+- --skip-sprockets
+- --database=
+- --javascript=
+- --skip-javascript
+- --dev
+- --edge
+- --skip-test-unit
+- --old-style-hash
+- --dummy-path=
+- --full
+- --mountable
+- --skip-gemspec
+resource:
+- --migration
+- --timestamps
+- --parent=
+- --indexes
+- --test-framework=
+- --fixture
+- --fixture-replacement=
+- --template-engine=
+- --helper
+- --assets
+- --force
+- --pretend
+- --quiet
+- --skip
+- --skip-namespace
+- --old-style-hash
+- --orm=
+- --force-plural
+- --resource-controller=
+- --actions=
+scaffold:
+- --migration
+- --timestamps
+- --parent=
+- --indexes
+- --test-framework=
+- --fixture
+- --fixture-replacement=
+- --template-engine=
+- --helper
+- --force
+- --pretend
+- --quiet
+- --skip
+- --skip-namespace
+- --old-style-hash
+- --orm=
+- --force-plural
+- --stylesheets
+- --stylesheet-engine=
+- --scaffold-controller=
+- --assets
+scaffold_controller:
+- --force
+- --pretend
+- --quiet
+- --skip
+- --skip-namespace
+- --old-style-hash
+- --force-plural
+- --orm=
+- --template-engine=
+- --test-framework=
+- --helper
+session_migration:
+- --force
+- --pretend
+- --quiet
+- --skip
+- --skip-namespace
+- --old-style-hash
+- --orm=
+mailer:
+- --force
+- --pretend
+- --quiet
+- --skip
+- --skip-namespace
+- --old-style-hash
+- --template-engine=
+- --test-framework=

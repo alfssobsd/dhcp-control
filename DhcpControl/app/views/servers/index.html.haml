@@ -1,0 +1,30 @@
+:javascript
+  $(document).ready(function() { 
+    $("table#TableServer").tablesorter({ 
+      sortList: [[0,0]],
+    });
+  });
+  
+
+- content_for :breadcrumb do
+  %li.active
+    = link_to "Servers", servers_path
+
+- content_for :sidebar do
+  %h2 Servers List
+  %p 
+    Number of servers: 
+    = @servers.count
+  = link_to 'New Server', new_server_path, :class => "btn primary"
+
+%table#TableServer.zebra-striped.bordered-table
+  %thead
+    %th Name
+    %th
+  - @servers.each do |server|
+    %tr
+      %td= link_to server.name, server_subnets_path(server)
+      %td
+        = link_to 'Show', server
+        = link_to 'Edit', edit_server_path(server)
+        = link_to 'Destroy', server, confirm: 'Are you sure?', method: :delete

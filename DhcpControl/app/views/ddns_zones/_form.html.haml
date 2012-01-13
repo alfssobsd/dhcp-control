@@ -1,0 +1,27 @@
+= form_for([@server, @subnet, @ddns_zone]) do |f|
+  - if @ddns_zone.errors.any?
+    .alert-message.block-message.error
+      %h2
+        = pluralize(@ddns_zone.errors.count, "error")
+        prohibited this ddns_zone from being saved:
+      %ul
+        - @ddns_zone.errors.full_messages.each do |msg|
+          %li= msg
+  .clearfix{:class => !( f.object.errors[:name].empty?) ? "error" : nil}
+    = f.label :name
+    .input
+      = f.text_field :name
+  .clearfix{:class => !( f.object.errors[:primary].empty?) ? "error" : nil}
+    = f.label :primary
+    .input
+      = f.text_field :primary
+  .clearfix{:class => !( f.object.errors[:ddns_key_id].empty?) ? "error" : nil}
+    = f.label :ddns_key_id
+    .input
+      = f.select('ddns_key_id', DdnsKey.where(:server_id => @server.id).collect {|x| [ x.name, x.id ] })
+  .clearfix{:class => !( f.object.errors[:is_reverse].empty?) ? "error" : nil}
+    = f.label :is_reverse
+    .input
+      = f.check_box :is_reverse
+  .dialogButton
+    = f.submit :class => "btn primary"

@@ -1,0 +1,35 @@
+= form_for(@setting) do |f|
+  - if @setting.errors.any?
+    .alert-message.block-message.error
+      %h2
+        = pluralize(@setting.errors.count, "error")
+        prohibited this setting from being saved:
+      %ul
+        - @setting.errors.full_messages.each do |msg|
+          %li= msg
+  .clearfix{:class => !( f.object.errors[:enable_rabbitmq].empty?) ? "error" : nil}
+    = f.label :enable_rabbitmq
+    .input
+      = f.check_box :enable_rabbitmq
+  .clearfix{:class => !( f.object.errors[:rabbitmq_host].empty?) ? "error" : nil}
+    = f.label :rabbitmq_host
+    .input
+      = f.text_field :rabbitmq_host
+  .clearfix{:class => !( f.object.errors[:rabbitmq_port].empty?) ? "error" : nil}
+    = f.label :rabbitmq_port
+    .input
+      = f.text_field :rabbitmq_port
+  .clearfix{:class => !( f.object.errors[:rabbitmq_vhost].empty?) ? "error" : nil}
+    = f.label :rabbitmq_vhost
+    .input
+      = f.text_field :rabbitmq_vhost
+  .clearfix{:class => !( f.object.errors[:rabbitmq_user].empty?) ? "error" : nil}
+    = f.label :rabbitmq_user
+    .input
+      = f.text_field :rabbitmq_user
+  .clearfix{:class => !( f.object.errors[:rabbitmq_password].empty?) ? "error" : nil}
+    = f.label :rabbitmq_password
+    .input
+      = f.text_field :rabbitmq_password
+  .dialogButton
+    = f.submit :class => "btn primary"

@@ -1,0 +1,19 @@
+= form_for([@server, @subnet, @group]) do |f|
+  - if @group.errors.any?
+    .alert-message.block-message.error
+      %h2
+        = pluralize(@group.errors.count, "error")
+        prohibited this group from being saved:
+      %ul
+        - @group.errors.full_messages.each do |msg|
+          %li= msg
+  .clearfix{:class => !( f.object.errors[:name].empty?) ? "error" : nil}
+    = f.label :name
+    .input
+      = f.text_field :name
+  .clearfix{:class => !( f.object.errors[:options].empty?) ? "error" : nil}
+    = f.label :options
+    .input
+      = f.text_area :options, :size => "40x10", :style => 'width: 500px;'
+  .dialogButton
+    = f.submit :class => "btn primary"

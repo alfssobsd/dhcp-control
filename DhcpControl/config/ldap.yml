@@ -1,0 +1,15 @@
+defaults: &defaults
+  host: "ldap.developonbox.ru"
+  login_attr: "uid"
+  login_base_dn: "ou=people,dc=developonbox,dc=ru"
+  port: 636
+  ssl: true
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

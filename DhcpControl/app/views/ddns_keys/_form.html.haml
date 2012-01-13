@@ -1,0 +1,23 @@
+= form_for([@server, @ddns_key]) do |f|
+  - if @ddns_key.errors.any?
+    .alert-message.block-message.error
+      %h2
+        = pluralize(@ddns_key.errors.count, "error")
+        prohibited this ddns_key from being saved:
+      %ul
+        - @ddns_key.errors.full_messages.each do |msg|
+          %li= msg
+  .clearfix{:class => !( f.object.errors[:name].empty?) ? "error" : nil}
+    = f.label :name
+    .input
+      = f.text_field :name
+  .clearfix{:class => !( f.object.errors[:algorithm].empty?) ? "error" : nil}
+    = f.label :algorithm
+    .input
+      = f.text_field :algorithm
+  .clearfix{:class => !( f.object.errors[:secret].empty?) ? "error" : nil}
+    = f.label :secret
+    .input
+      = f.text_field :secret
+  .dialogButton
+    = f.submit :class => "btn primary"

@@ -1,0 +1,27 @@
+= form_for(@server) do |f|
+  - if @server.errors.any?
+    .alert-message.block-message.error
+      %h2
+        = pluralize(@server.errors.count, "error")
+        prohibited this server from being saved:
+      %ul
+        - @server.errors.full_messages.each do |msg|
+          %li= msg
+  .clearfix{:class => !( f.object.errors[:name].empty?) ? "error" : nil}
+    = f.label :name
+    .input
+      = f.text_field :name
+  .clearfix{:class => !( f.object.errors[:options].empty?) ? "error" : nil}
+    = f.label :options
+    .input
+      = f.text_area :options, :size => "40x10", :style => 'width: 500px;'
+  .clearfix{:class => !( f.object.errors[:is_authoritative].empty?) ? "error" : nil}
+    = f.label :is_authoritative
+    .input
+      = f.check_box :is_authoritative
+  .clearfix{:class => !( f.object.errors[:enable_ddns].empty?) ? "error" : nil}
+    = f.label :enable_ddns
+    .input
+      = f.check_box :enable_ddns
+  .dialogButton
+    = f.submit :class => "btn primary"

@@ -1,0 +1,40 @@
+:javascript
+  $(document).ready(function() {
+    $("table#TableGroup").tablesorter({
+      sortList: [[0,0]],
+    });
+  });
+
+- content_for :breadcrumb do
+  %li
+    = link_to "Server (#{@server.name})", servers_path
+    %span.divider /
+  %li
+    = link_to "Subnet (#{@subnet.net})", server_subnets_path
+    %span.divider /
+  %li
+    Groups
+
+- content_for :sidebar do
+  %h2 Groups List
+  %h4 
+    Subnet: 
+    "#{@subnet.net}"
+  %p 
+    Number of groups: 
+    = @groups.count
+  = link_to 'New Group', new_server_subnet_group_path, :class => "btn primary"
+  %br/
+  %br/
+  = link_to 'Subnets', server_subnets_path, :class => "btn icon arrowleft"
+
+%table#TableGroup.zebra-striped.bordered-table
+  %thead
+    %th Name
+    %th
+    %th
+  - @groups.each do |group|
+    %tr
+      %td= link_to group.name, server_subnet_group_hosts_path(@server, @subnet, group)
+      %td= link_to 'Edit', edit_server_subnet_group_path(@server, @subnet, group)
+      %td= link_to 'Destroy', server_subnet_group_path(@server, @subnet, group), confirm: 'Are you sure?', method: :delete

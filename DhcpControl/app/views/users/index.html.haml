@@ -1,0 +1,30 @@
+:javascript
+  $(document).ready(function() {
+    $("table#TableUsers").tablesorter({
+      sortList: [[0,0]],
+    });
+  });
+
+- content_for :sidebar do
+  %h2 Users
+  %p
+    Number of Users:
+    = @users.count
+  = link_to 'New User', new_user_path, :class => "btn primary"
+
+%table#TableUsers.zebra-striped.bordered-table
+  %thead
+    %th Login
+    %th Api token
+    %th Is ldap
+    %th
+    %th
+    %th
+  - @users.each do |user|
+    %tr
+      %td= user.login
+      %td= user.api_token
+      %td= user.is_ldap
+      %td= link_to 'Show', user
+      %td= link_to 'Edit', edit_user_path(user)
+      %td= link_to 'Destroy', user, confirm: 'Are you sure?', method: :delete

@@ -1,0 +1,223 @@
+grammar Dhcp
+
+  rule config_options
+  default_tcp_ttl / default_ip_ttl / time_offset / interface_mtu / dhcp_client_identifier / all_subnets_local / default_lease_time / max_lease_time / domain_name / nisplus_domain / nis_domain / netbios_node_type / routers /nisplus_servers / ntp_servers / log_servers / time_servers / nis_servers / lpr_servers / domain_name_servers / netbios_name_servers / root_path / filename / next_server / log_facility / unknown_clients / client_updates / update_static_leases / duplicates / bootp / boot_unknown_clients / declines / leasequery / booting / server_name
+  end
+  
+  rule boot_unknown_clients
+    space? 'boot-unknown-clients' space flag end_keyword
+  end
+  
+  rule booting
+    space? allow_deny_ignore space 'booting' end_keyword
+  end
+  
+  rule leasequery
+    space? allow_deny space 'leasequery' end_keyword
+  end
+  
+  rule bootp
+    space? allow_deny_ignore space 'bootp' end_keyword
+  end
+  
+  rule duplicates
+    space? allow_deny space 'duplicates' end_keyword
+  end
+  
+  rule client_updates
+    space? allow_deny_ignore space 'client-updates' end_keyword
+  end
+  
+  rule declines
+    space? allow_deny_ignore space 'declines' end_keyword
+  end
+  
+  rule update_static_leases
+    space? 'update-static-leases' space flag end_keyword
+  end
+
+  rule unknown_clients
+    space? ('allow' / 'deny') space 'unknown-clients' end_keyword
+  end
+  
+  rule server_name
+    space? 'server-name' space string end_keyword
+  end
+  
+  rule default_tcp_ttl
+    space? 'option default-tcp-ttl' space number end_keyword
+  end
+  
+  rule default_ip_ttl
+    space? 'option default-ip-ttl' space number end_keyword
+  end
+  
+  rule time_offset
+    space? 'option time-offset' space number end_keyword
+  end
+  
+  rule interface_mtu
+    space? 'option interface-mtu' space number end_keyword
+  end
+  
+  rule dhcp_client_identifier
+    space? 'option dhcp-client-identifier' space string end_keyword
+  end
+  
+  rule all_subnets_local
+    space? 'option all-subnets-local' space flag end_keyword
+  end
+  
+  
+  rule default_lease_time
+    space? 'default-lease-time'  space number end_keyword
+  end
+  
+  rule max_lease_time
+    space? 'max-lease-time' space number end_keyword
+  end
+
+  rule domain_name
+    space? 'option domain-name' space quote string quote end_keyword
+  end
+  
+  rule nisplus_domain
+    space? 'option nisplus-domain' space string end_keyword
+  end
+  
+  rule nis_domain
+    space? 'option nis-domain' space string end_keyword
+  end
+  
+  rule netbios_node_type 
+    space? 'option netbios-node-type' space number end_keyword
+  end
+  
+  rule routers
+    space? 'option routers' space (IPv6address / IPv4address) recurse_ip? end_keyword
+  end
+  
+  rule nisplus_servers
+    space? 'option nisplus-servers' space (IPv6address / IPv4address) recurse_ip? end_keyword
+  end
+  
+  rule ntp_servers
+    space? 'option ntp-servers' space (IPv6address / IPv4address) recurse_ip? end_keyword
+  end
+  
+  rule log_servers
+    space? 'option log-servers' space (IPv6address / IPv4address) recurse_ip? end_keyword
+  end
+  
+  rule time_servers
+    space? 'option time-servers' space (IPv6address / IPv4address) recurse_ip? end_keyword
+  end
+  
+  rule nis_servers
+    space? 'option nis-servers' space (IPv6address / IPv4address) recurse_ip? end_keyword
+  end
+  
+  rule lpr_servers
+    space? 'option lpr-servers' space (IPv6address / IPv4address) recurse_ip? end_keyword
+  end
+  
+  rule domain_name_servers
+    space? 'option domain-name-servers' space (IPv6address / IPv4address) recurse_ip? end_keyword
+  end
+  
+  rule netbios_name_servers
+    space? 'option netbios-name-servers' space (IPv6address / IPv4address) recurse_ip? end_keyword
+  end
+  
+  rule root_path
+    space? 'option root-path' space quote path quote end_keyword
+  end
+  
+  rule filename
+    space? 'filename' space quote path quote end_keyword
+  end
+  
+  rule next_server
+    space? 'next-server' space ((IPv6address / IPv4address) / string) end_keyword
+  end
+  
+  rule log_facility
+    space? 'log-facility' space string end_keyword
+  end
+  
+  rule allow_deny_ignore
+     allow_deny / 'ignore'
+  end
+  
+  rule allow_deny
+    'allow' / 'deny'
+  end
+
+  rule flag
+    [01] / 'on' / 'off'
+  end
+
+  rule comma
+    space? ',' space?
+  end
+
+  rule quote
+    [\'\"]
+  end
+  
+  rule space
+    [\t ]+
+  end
+
+  rule number
+    '-'? [1-9] [0-9]*
+  end
+  
+  rule string
+    [a-zA-z0-9_\-\.]+
+  end
+  
+  rule path
+    [a-zA-z0-9_\-\.\\/]+
+  end
+  
+  rule end_keyword
+    space? ';' space?
+  end
+  
+  rule recurse_ip
+    (comma (IPv6address / IPv4address))+
+  end
+  
+  rule IPv4address
+    DIGIT DIGIT? DIGIT? '.' DIGIT DIGIT? DIGIT? '.' DIGIT DIGIT? DIGIT? '.' DIGIT DIGIT? DIGIT?
+  end
+
+  rule IPv6address
+    (    h16 ':' h16 ':' h16 ':' h16 ':' h16 ':' h16 ':' ls32    )
+    / (    '::' h16 ':' h16 ':' h16 ':' h16 ':' h16 ':' ls32    )
+    / (    h16? '::' h16 ':' h16 ':' h16 ':' h16 ':' ls32    )
+    / (    ( '::' / h16 '::' / h16 ':' h16 '::' ) h16 ':' h16 ':' h16 ':' ls32    )
+    / (    ( '::' / h16 '::' / h16 ':' h16 '::' / h16 ':' h16 ':' h16 '::' ) h16 ':' h16 ':' ls32    )
+    / (    ( '::' / h16 '::' / h16 ':' h16 '::' / h16 ':' h16 ':' h16 '::' / h16 ':' h16 ':' h16 ':' h16 '::' ) h16 ':' ls32    )
+    / (    ( '::' / h16 '::' / h16 ':' h16 '::' / h16 ':' h16 ':' h16 '::' / h16 ':' h16 ':' h16 ':' h16 '::' / h16 ':' h16 ':' h16 ':' h16 ':' h16 '::' ) ls32    )
+    / (    ( '::' / h16 '::' / h16 ':' h16 '::' / h16 ':' h16 ':' h16 '::' / h16 ':' h16 ':' h16 ':' h16 '::' / h16 ':' h16 ':' h16 ':' h16 ':' h16 '::' / h16 ':' h16 ':' h16 ':' h16 ':' h16 ':' h16 '::' ) h16    )
+    / (    '::' / h16 '::' / h16 ':' h16 '::' / h16 ':' h16 ':' h16 '::' / h16 ':' h16 ':' h16 ':' h16 '::' / h16 ':' h16 ':' h16 ':' h16 ':' h16 '::' / h16 ':' h16 ':' h16 ':' h16 ':' h16 ':' h16 '::' / h16 ':' h16 ':' h16 ':' h16 ':' h16 ':' h16 ':' h16 '::'    )
+  end
+  
+  rule h16
+    HEXDIG HEXDIG? HEXDIG? HEXDIG?
+  end
+  
+  rule ls32
+    ( h16 ":" h16 ) / IPv4address
+  end
+  
+  rule HEXDIG
+    [0123456789AaBbCcDdEeFf] 
+  end
+  
+  rule DIGIT
+    [\x30-\x39]
+  end
+end

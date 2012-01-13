@@ -1,0 +1,31 @@
+= form_for(@user) do |f|
+  - if @user.errors.any?
+    .alert-message.block-message.error
+      %h2
+        = pluralize(@user.errors.count, "error")
+        prohibited this user from being saved:
+      %ul
+        - @user.errors.full_messages.each do |msg|
+          %li= msg
+  .clearfix{:class => !( f.object.errors[:login].empty?) ? "error" : nil}
+    = f.label :login
+    .input
+      = f.text_field :login
+  .clearfix{:class => !( f.object.errors[:password].empty?) ? "error" : nil}
+    = f.label :password
+    .input
+      = f.password_field :password
+  .clearfix{:class => !( f.object.errors[:password_confirmation].empty?) ? "error" : nil}
+    = f.label :password_confirmation, "Confirmation"
+    .input
+      = f.password_field :password_confirmation
+  .clearfix{:class => !( f.object.errors[:api_token].empty?) ? "error" : nil}
+    = f.label :api_token
+    .input
+      = f.text_field :api_token
+  .clearfix{:class => !( f.object.errors[:is_ldap].empty?) ? "error" : nil}
+    = f.label :is_ldap
+    .input
+      = f.check_box :is_ldap
+  .dialogButton
+    = f.submit :class => "btn primary"

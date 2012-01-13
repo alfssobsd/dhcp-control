@@ -1,0 +1,18 @@
+- content_for :sidebar do
+  %h2
+    Show
+  %h4
+    =@user.login
+  = link_to 'Back', users_path, :class => "btn icon arrowleft"
+
+%p#notice= notice
+%p
+  %b Login:
+  = @user.login
+%p
+  %b Api token:
+  = @user.api_token
+%p
+  %b Is ldap:
+  = @user.is_ldap
+= link_to 'Edit', edit_user_path(@user), :class => "btn primary"

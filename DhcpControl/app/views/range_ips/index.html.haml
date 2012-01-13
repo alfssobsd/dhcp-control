@@ -1,0 +1,39 @@
+:javascript
+  $(document).ready(function() {
+    $("table#TableRangeIp").tablesorter({
+      sortList: [[0,0]],
+    });
+  });
+
+- content_for :breadcrumb do
+  %li
+    = link_to "Server (#{@server.name})", servers_path
+    %span.divider /
+  %li
+    = link_to "Subnet (#{@subnet.net})", server_subnets_path
+    %span.divider /
+  %li.active
+    Ranges IP
+
+- content_for :sidebar do
+  %h2 Ranges List
+  %h4 
+    Subnet: 
+    "#{@subnet.net}"
+  = link_to 'New Range ip', new_server_subnet_range_ip_path, :class => "btn primary"
+  %br/
+  %br
+  = link_to 'Subnets', server_subnets_path, :class => "btn icon arrowleft"
+
+%table#TableRangeIp.zebra-striped.bordered-table
+  %thead
+    %th Ip start
+    %th Ip end
+    %th
+    %th
+  - @range_ips.each do |range_ip|
+    %tr
+      %td= range_ip.ip_start
+      %td= range_ip.ip_end
+      %td= link_to 'Edit', edit_server_subnet_range_ip_path(@server, @subnet, range_ip)
+      %td= link_to 'Destroy', server_subnet_range_ip_path(@server, @subnet, range_ip), confirm: 'Are you sure?', method: :delete
