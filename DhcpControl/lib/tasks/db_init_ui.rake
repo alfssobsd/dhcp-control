@@ -42,4 +42,12 @@ def init_web_ui
   group.default   = true
   group.save
 
+  setting = Setting.new
+  setting.enable_rabbitmq = false
+  setting.rabbitmq_host   = "rabbitmq.example.org"
+  setting.rabbitmq_user   = "rabbit"
+  setting.rabbitmq_password = "password"
+  setting.rabbitmq_vhost    = "/"
+  setting.save
+
 end
