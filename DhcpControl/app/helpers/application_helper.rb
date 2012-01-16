@@ -3,7 +3,7 @@ module ApplicationHelper
   Treetop.load dhcp_grammer_path.to_s
 
   def version
-    return "0.91"
+    return "0.92"
   end
 
   class ValidateDhcpOptions

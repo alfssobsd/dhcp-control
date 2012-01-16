@@ -6,12 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1cb96211-71a9-41e3-bec3-bd55f4cade1f" name="Default" comment="">
+    <list default="true" id="1cb96211-71a9-41e3-bec3-bd55f4cade1f" name="Default" comment="[~] change rest lib (RestAssured -&gt; Restlet)&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../DhcpControl/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/../DhcpControl/.idea/.rakeTasks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../DhcpControl/.idea/DhcpControl.iml" afterPath="$PROJECT_DIR$/../DhcpControl/.idea/DhcpControl.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../DhcpControl/.idea/vcs.xml" afterPath="$PROJECT_DIR$/../DhcpControl/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../DhcpControl/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/../DhcpControl/app/helpers/application_helper.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../DhcpControl/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../DhcpControl/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DhcpControlDaemon.iws" />
@@ -76,46 +74,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="RestApi.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/RestApi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="328" column="110" selection-start="14706" selection-end="14706" vertical-scroll-proportion="11.907975">
+              <folding>
+                <element signature="e#0#15596#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Generator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/Generator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="48" column="63" selection-start="1703" selection-end="1703" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="dhcp_control_daemon.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/etc/dhcp_control_daemon.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="16" selection-start="597" selection-end="597" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dhcp-control-daemon.init.d" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/etc/dhcp-control-daemon.init.d">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="25" selection-start="616" selection-end="632" vertical-scroll-proportion="0.044247787">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TaskWorker.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/TaskWorker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="145" column="68" selection-start="5073" selection-end="5073" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WatcherRabbit.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/WatcherRabbit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="19" selection-start="1176" selection-end="1176" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logback.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/etc/logback.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="22" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0">
+            <state line="7" column="54" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -124,34 +107,54 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="60" selection-start="2453" selection-end="2453" vertical-scroll-proportion="0.0">
+            <state line="92" column="62" selection-start="3417" selection-end="3417" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Project_Default.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml">
+      <file leaf-file-name="logback.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/etc/logback.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="10" column="22" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RestApi.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/RestApi.java">
+      <file leaf-file-name="dhcp-control-daemon.init.d" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/etc/dhcp-control-daemon.init.d">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="0" selection-start="2163" selection-end="2163" vertical-scroll-proportion="0.0">
+            <state line="20" column="88" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Generator.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/Generator.java">
+      <file leaf-file-name="TaskData.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/TaskData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="258" column="13" selection-start="11168" selection-end="11168" vertical-scroll-proportion="0.0">
+            <state line="34" column="34" selection-start="1233" selection-end="1233" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TaskWorker.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/TaskWorker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="54" selection-start="1620" selection-end="1620" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WatcherRabbit.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/WatcherRabbit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="117" column="56" selection-start="4150" selection-end="4150" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -175,22 +178,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/RestApiError.java" />
+        <option value="$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/RestDataServer.java" />
+        <option value="$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/RestDataDDNSKey.java" />
         <option value="$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/RestDataSubnet.java" />
-        <option value="$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/RabbitData.java" />
+        <option value="$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/RestDataDDNSZone.java" />
+        <option value="$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/RestDataRangeIP.java" />
+        <option value="$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/RestDataGroup.java" />
+        <option value="$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/RestDataHost.java" />
         <option value="$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/TaskData.java" />
-        <option value="$PROJECT_DIR$/etc/logback.xml" />
-        <option value="$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/Config.java" />
-        <option value="$PROJECT_DIR$/etc/dhcp_control_daemon.xml" />
-        <option value="$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/ConnectCheck.java" />
-        <option value="$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/ConnectRabbit.java" />
-        <option value="$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/SubscribeRabbit.java" />
-        <option value="$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/TaskWorker.java" />
         <option value="$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/WatcherRabbit.java" />
-        <option value="$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/RestApi.java" />
         <option value="$PROJECT_DIR$/etc/dhcp-control-daemon.init.d" />
+        <option value="$PROJECT_DIR$/etc/logback.xml" />
+        <option value="$PROJECT_DIR$/etc/dhcp_control_daemon.xml" />
         <option value="$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/Generator.java" />
+        <option value="$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/TaskWorker.java" />
         <option value="$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/Main.java" />
+        <option value="$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/RestApi.java" />
       </list>
     </option>
   </component>
@@ -201,7 +204,6 @@
     <option name="jreName" value="#JAVA_INTERNAL" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="709" />
@@ -263,7 +265,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -328,6 +329,164 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DhcpControlDaemon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DhcpControlDaemon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org.osgi_4.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DhcpControlDaemon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DhcpControlDaemon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org.json_2.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DhcpControlDaemon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DhcpControlDaemon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org.apache.james.mime4j_0.6" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DhcpControlDaemon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DhcpControlDaemon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org.apache.httpmime_4.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DhcpControlDaemon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DhcpControlDaemon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org.apache.httpcore_4.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DhcpControlDaemon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DhcpControlDaemon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org.apache.httpclient_4.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DhcpControlDaemon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DhcpControlDaemon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org.apache.commons.codec_1.4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DhcpControlDaemon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DhcpControlDaemon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="net.jcip.annotations_1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DhcpControlDaemon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DhcpControlDaemon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="etc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -366,6 +525,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -373,16 +533,16 @@
     <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="false" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="90" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="99" />
-    <property name="project.structure.proportion" value="0.15" />
     <property name="OverrideImplement.combined" value="true" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="99" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="96" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="recentsLimit" value="5" />
-    <property name="MemberChooser.sorted" value="false" />
     <property name="GenerateAntBuildDialog.generateSingleFile" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="96" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="103" />
@@ -395,24 +555,24 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="MemberChooser.showClasses" value="true" />
-    <property name="FullScreen" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="Downloaded.Files.Path" value="$PROJECT_DIR$/lib" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="Downloaded.Files.Path" value="$PROJECT_DIR$/lib" />
     <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="options.lastSelected" value="preferences.sourceCode.Java" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="options.lastSelected" value="reference.settings.project.maven.repository.indices" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RunManager" selected="Application.DhcpControlDaemon">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -435,24 +595,6 @@
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -481,6 +623,24 @@
       <envs />
       <properties />
       <listeners />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -568,7 +728,7 @@
     </configuration>
     <configuration default="false" name="DhcpControlDaemon" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="net.alfss.DhcpControlDaemon.Main" />
-      <option name="VM_PARAMETERS" value="-Dlogback.configurationFile=$PROJECT_DIR$/etc/logback.xml " />
+      <option name="VM_PARAMETERS" value="-Dlogback.configurationFile=$PROJECT_DIR$/etc/logback.xml -Dorg.restlet.engine.loggerFacadeClass=org.restlet.ext.slf4j.Slf4jLoggerFacade -Xms16m -Xmx32m -XX:+UseParNewGC -XX:+CMSParallelRemarkEnabled -XX:+UseConcMarkSweepGC" />
       <option name="PROGRAM_PARAMETERS" value="-c $PROJECT_DIR$/etc/dhcp_control_daemon.xml" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -647,7 +807,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="23" width="1280" height="709" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="709" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3423729" sideWeight="0.49675325" order="7" side_tool="false" content_ui="tabs" />
@@ -657,19 +817,19 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3423729" sideWeight="0.49756494" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20860389" sideWeight="0.3644068" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32881355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32542372" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26271185" sideWeight="0.49675325" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20860389" sideWeight="0.2440678" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39935064" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32954547" sideWeight="0.6576271" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34094617" sideWeight="0.48133117" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22483766" sideWeight="0.6576271" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34067798" sideWeight="0.48133117" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Archetypes" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Maven-2 Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Repo Search" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32542372" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32542372" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="ConsoleMavenPlugin" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -709,7 +869,7 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="[~] add version&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="[~] change rest lib (RestAssured -&gt; Restlet)&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -735,6 +895,9 @@
     <MESSAGE value="[~] dont create empty group" />
     <MESSAGE value="[~] idea files&#10;" />
     <MESSAGE value="[~] add version&#10;" />
+    <MESSAGE value="[~] update idea files&#10;" />
+    <MESSAGE value="[~] update lib&#10;" />
+    <MESSAGE value="[~] change rest lib (RestAssured -&gt; Restlet)&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -744,85 +907,123 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/RestDataSubnet.java">
+    <entry file="file://$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/RestDataRangeIP.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="50" selection-start="1709" selection-end="1709" vertical-scroll-proportion="0.5132743" />
+        <state line="38" column="30" selection-start="1279" selection-end="1279" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/RestApiError.java">
+    <entry file="file://$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/RestDataGroup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="18" selection-start="1060" selection-end="1060" vertical-scroll-proportion="0.48672566" />
+        <state line="38" column="29" selection-start="1269" selection-end="1269" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/RestDataHost.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="41" column="30" selection-start="1351" selection-end="1351" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/Config.java">
+    <entry file="file://$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/RestDataDDNSKey.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="77" selection-start="2359" selection-end="2359" vertical-scroll-proportion="0.9926063" />
+        <state line="42" column="36" selection-start="1461" selection-end="1461" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/RestDataDDNSZone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="33" selection-start="1349" selection-end="1349" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/TaskData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="19" selection-start="1137" selection-end="1137" vertical-scroll-proportion="0.4990758" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/RestDataServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="1141" selection-end="1439" vertical-scroll-proportion="0.63955635" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/etc/dhcp_control_daemon.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="16" selection-start="597" selection-end="597" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/TaskWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="68" selection-start="5073" selection-end="5073" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/WatcherRabbit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="19" selection-start="1176" selection-end="1176" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/etc/logback.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="22" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="60" selection-start="2453" selection-end="2453" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/RestApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="0" selection-start="2163" selection-end="2163" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/Generator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="258" column="13" selection-start="11168" selection-end="11168" vertical-scroll-proportion="0.0" />
+        <state line="34" column="34" selection-start="1233" selection-end="1233" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/etc/dhcp-control-daemon.init.d">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="25" selection-start="616" selection-end="632" vertical-scroll-proportion="0.044247787">
+        <state line="20" column="88" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etc/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="22" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/org.restlet.jar!/org/restlet/resource/ClientResource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="190" column="0" selection-start="11369" selection-end="11369" vertical-scroll-proportion="0.7847682">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/WatcherRabbit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="117" column="56" selection-start="4150" selection-end="4150" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/Generator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="63" selection-start="1703" selection-end="1703" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/TaskWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="54" selection-start="1620" selection-end="1620" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="62" selection-start="3417" selection-end="3417" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/etc/dhcp_control_daemon.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="54" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/alfss/DhcpControlDaemon/RestApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="328" column="110" selection-start="14706" selection-end="14706" vertical-scroll-proportion="11.907975">
+          <folding>
+            <element signature="e#0#15596#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -917,7 +1118,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>com.rabbitmq:amqp-client:2.7.1</last-edited>
+          <last-edited>lib</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
