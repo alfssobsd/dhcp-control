@@ -42,9 +42,9 @@ public class Generator {
     private int server_id;
     final Logger logger = (Logger) LoggerFactory.getLogger("net/alfss/DhcpControlDaemon");
 
-    public Generator(String config_path, String url, int port, String api_token, int server_id) {
+    public Generator(String config_path, String url, String api_token, int server_id) {
         this.config_path = config_path;
-        this.rest        = new RestApi(url, port, api_token);
+        this.rest        = new RestApi(url, api_token);
         this.server_id   = server_id;
         try {
             this.server = rest.getServer(server_id);

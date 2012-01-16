@@ -16,7 +16,8 @@
 
 package net.alfss.DhcpControlDaemon;
 
-import net.sf.json.JSONObject;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 /**
  * User: Sergey V. Kravchuk <alfss.obsd@gmail.com>
@@ -30,8 +31,8 @@ public class TaskData {
     public int host_id;
     public String action;
 
-    public TaskData(String s){
-        JSONObject json = JSONObject.fromObject(s);
+    public TaskData(String s) throws JSONException {
+        JSONObject json = new JSONObject(s);
         this.action     = json.getString("action");
         this.server_id  = json.getInt("server_id");
         this.subnet_id  = json.getInt("subnet_id");

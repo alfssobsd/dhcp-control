@@ -14,7 +14,10 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-package net.alfss.DhcpControlDaemon;import net.sf.json.JSONObject;
+package net.alfss.DhcpControlDaemon;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 /**
  * User: Sergey V. Kravchuk <alfss.obsd@gmail.com>
@@ -33,7 +36,7 @@ public class RestDataDDNSKey {
 
     }
 
-    public RestDataDDNSKey(JSONObject item) {
+    public RestDataDDNSKey(JSONObject item) throws JSONException {
         this.id         = item.getInt("id");
         this.server_id  = item.getInt("server_id");
         this.name       = item.getString("name");

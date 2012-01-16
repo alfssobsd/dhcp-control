@@ -42,7 +42,6 @@ public class TaskWorker extends  Thread {
 
         generator = new Generator(config.dhcp_dir,
                                   config.rest_api_url,
-                                  config.rest_api_port,
                                   config.rest_api_token,
                                   config.reat_api_server_id);
     }

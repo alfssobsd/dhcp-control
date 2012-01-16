@@ -18,7 +18,7 @@ PATH=/sbin:/bin:/usr/sbin:/usr/bin
 LOGBACK=/etc/dhcp-control-daemon/logback.xml
 CONF=/etc/dhcp-control-daemon/dhcp_control_daemon.xml
 JSVC=/usr/bin/jsvc
-JVM_OPT="-Xms64m -Xmx128m  -XX:+UseParNewGC -XX:+CMSParallelRemarkEnabled -XX:+UseConcMarkSweepGC"
+JVM_OPT="-Dorg.restlet.engine.loggerFacadeClass=org.restlet.ext.slf4j.Slf4jLoggerFacade -Xms64m -Xmx128m  -XX:+UseParNewGC -XX:+CMSParallelRemarkEnabled -XX:+UseConcMarkSweepGC"
 PIDFILE=/var/run/dhcp-control-daemon.pid
 DAEMONJAR=/opt/DhcpControlDaemon/DhcpControlDaemon.jar
 COMMON_DAEMON=/usr/share/java/commons-daemon.jar

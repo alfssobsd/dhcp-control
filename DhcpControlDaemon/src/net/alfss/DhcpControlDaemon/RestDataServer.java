@@ -14,7 +14,9 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-package net.alfss.DhcpControlDaemon;import net.sf.json.JSONObject;
+package net.alfss.DhcpControlDaemon;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class RestDataServer {
     public int       id;
@@ -27,7 +29,7 @@ public class RestDataServer {
 
     }
 
-    public RestDataServer(JSONObject item) {
+    public RestDataServer(JSONObject item) throws JSONException {
         this.id               = item.getInt("id");
         this.name             = item.getString("name");
         this.is_authoritative = item.getBoolean("is_authoritative");

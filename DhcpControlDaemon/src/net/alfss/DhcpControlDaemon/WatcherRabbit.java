@@ -17,6 +17,7 @@
 package net.alfss.DhcpControlDaemon;
 
 import com.rabbitmq.client.*;
+import org.json.JSONException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -113,6 +114,8 @@ public class WatcherRabbit extends Thread {
 
                 worker.addTask(data);
                 worker.unlockMonitor();
+            } catch (JSONException e) {
+                logger.error("Error task:", e.toString());
             } catch (InterruptedException e) {
                 logger.error(e.toString());
                 for(StackTraceElement traceElement:e.getStackTrace()){

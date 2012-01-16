@@ -14,7 +14,10 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-package net.alfss.DhcpControlDaemon;import net.sf.json.JSONObject;
+package net.alfss.DhcpControlDaemon;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 /**
  * User: Sergey V. Kravchuk <alfss.obsd@gmail.com>
@@ -32,7 +35,7 @@ public class RestDataRangeIP {
 
     }
 
-    public RestDataRangeIP(JSONObject item) {
+    public RestDataRangeIP(JSONObject item) throws JSONException {
         this.id        = item.getInt("id");
         this.subnet_id = item.getInt("subnet_id");
         this.ip_start  = item.getString("ip_start");

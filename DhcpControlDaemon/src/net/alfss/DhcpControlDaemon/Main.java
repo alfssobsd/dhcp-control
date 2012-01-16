@@ -40,7 +40,7 @@ public class Main implements Daemon {
     final Logger logger = (Logger) LoggerFactory.getLogger("net/alfss/DhcpControlDaemon");
     private String [] arguments;
     private boolean generateAll = false;
-    private String version = "0.91";
+    private String version = "0.92";
 
     public void startDaemon(String [] args){
         String config_file = "/etc/dhcp_control_daemon.xml";
@@ -91,7 +91,6 @@ public class Main implements Daemon {
                 Generator generator;
                 generator = new Generator(config.dhcp_dir,
                                           config.rest_api_url,
-                                          config.rest_api_port,
                                           config.rest_api_token,
                                           config.reat_api_server_id);
                 generator.genAll();
