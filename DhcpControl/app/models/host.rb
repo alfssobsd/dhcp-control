@@ -14,10 +14,19 @@ class Host < ActiveRecord::Base
   
   validate  :validate_ip
   validate  :validate_mac
+  before_create :deleate_space
+  before_update :deleate_space
+
+  def delete_space
+    self.ip.gsub!(/[ \t]/,'');
+    self.name.gsub!(/[ \t]/,'');
+    self.mac.gsub!(/[ \t]/,'');
+  end
   
   def validate_mac
     if !mac.nil?
-      
+
+
       if (mac =~ /^([0-9a-fA-F]{2}[:-]){5}[0-9a-fA-F]{2}$/i).nil?
          errors[:mac] << "is invalid address"
       end
@@ -29,7 +38,7 @@ class Host < ActiveRecord::Base
     begin
       group  = Group.find(group_id)
       subnet = Subnet.ip_belong_net(group.subnet_id, ip)
-      
+
       if subnet.nil?
         errors[:ip] << "is not belong net"
       end
