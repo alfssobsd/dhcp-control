@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
-layout 'blank'
+  layout 'blank'
+  before_filter :authenticate
   # GET /users
   # GET /users.json
   def index

@@ -1,4 +1,6 @@
 class GroupsController < ApplicationController
+  before_filter :authenticate
+  
   # GET /groups
   # GET /groups.json
   def index

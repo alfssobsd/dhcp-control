@@ -1,4 +1,6 @@
 class RangeIpsController < ApplicationController
+  before_filter :authenticate
+  
   # GET /range_ips
   # GET /range_ips.json
   def index

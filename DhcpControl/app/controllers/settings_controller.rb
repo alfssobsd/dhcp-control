@@ -1,5 +1,6 @@
 class SettingsController < ApplicationController
-layout 'blank'
+  layout 'blank'
+  before_filter :authenticate
 
   # GET /settings
   # GET /settings.json
