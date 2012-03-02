@@ -3,10 +3,10 @@
     <rabbit_host>10.211.55.9</rabbit_host>
     <rabbit_port>5672</rabbit_port>
     <rabbit_vhost>/dhcp_control</rabbit_vhost>
-    <rabbit_user>dhcp_control</rabbit_user>
-    <rabbit_password>test</rabbit_password>
-    <rest_api_url>http://localhost:3001</rest_api_url>
-    <rest_api_token>d4fbf181a7f8d1770b21f2bfe19db269</rest_api_token>
+    <rabbit_user>guest</rabbit_user>
+    <rabbit_password>guest</rabbit_password>
+    <rest_api_url>http://dhcpcontrol.p-10.ru</rest_api_url>
+    <rest_api_token>94314b6ac653751c659a8a44387f07e0</rest_api_token>
     <reat_api_server_id>1</reat_api_server_id>
     <dhcp_dir>/tmp/dhcp</dhcp_dir>
     <dhcp_restart_cmd>/bin/ps</dhcp_restart_cmd>
