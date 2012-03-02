@@ -14,8 +14,8 @@ class Host < ActiveRecord::Base
   
   validate  :validate_ip
   validate  :validate_mac
-  before_create :deleate_space
-  before_update :deleate_space
+  before_create :delete_space
+  before_update :delete_space
 
   def delete_space
     self.ip.gsub!(/[ \t]/,'');
