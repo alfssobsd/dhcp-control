@@ -1,4 +1,5 @@
 class SubnetsController < ApplicationController
+  before_filter :authenticate
   # GET /subnets
   # GET /subnets.json
   def index
