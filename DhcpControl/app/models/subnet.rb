@@ -8,6 +8,12 @@ class Subnet < ActiveRecord::Base
   validate :validate_options
   
   before_save :set_netmask
+  before_create :delete_space
+  before_update :delete_space
+
+  def delete_space
+    self.net.gsub!(/[ \t]/,'');
+  end
   
   def self.ip_belong_net(id, ip)
     #select * from subnets where net >> '192.168.1.1'::cidr;

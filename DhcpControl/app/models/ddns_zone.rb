@@ -4,4 +4,11 @@ class DdnsZone < ActiveRecord::Base
   validates :name, :presence => true
   validates :subnet_id, :uniqueness => {:scope => :is_reverse }
 
+  before_create :delete_space
+  before_update :delete_space
+
+  def delete_space
+    self.name.gsub!(/[ \t]/,'');
+    self.primary.gsub!(/[ \t]/,'');
+  end
 end

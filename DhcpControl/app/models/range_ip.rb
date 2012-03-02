@@ -3,6 +3,13 @@ class RangeIp < ActiveRecord::Base
   validates_uniqueness_of :subnet_id, :scope => [:ip_start, :ip_end]
 
   validate  :validate_ip
+  before_create :delete_space
+  before_update :delete_space
+
+  def delete_space
+    self.ip_start.gsub!(/[ \t]/,'');
+    self.ip_end.gsub!(/[ \t]/,'');
+  end
 
   def validate_ip
     begin

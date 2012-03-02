@@ -10,7 +10,7 @@ set :repository, "."
 set :deploy_via, :copy
 set :domain, "rails@system01.developonbox.ru"
 set :rails_env, "production"
-set :deploy_to, "/home/rails/#{application}"
+set :deploy_to, "/spool/rails/#{application}"
 set :use_sudo, false
 set :unicorn_conf, "#{deploy_to}/current/config/unicorn.rb"
 set :unicorn_pid, "#{deploy_to}/shared/pids/unicorn.pid"

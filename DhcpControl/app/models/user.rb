@@ -10,6 +10,12 @@ class User < ActiveRecord::Base
                       :presence => true  
 
   before_save :encrypt_password
+  before_create :delete_space
+  before_update :delete_space
+
+  def delete_space
+    self.login.gsub!(/[ \t]/,'');
+  end
 
   def has_password?(submitted_password)
    encrypted_password == encrypt(submitted_password)
