@@ -7,7 +7,7 @@ DhcpControl::Application.routes.draw do
   resources :servers do
     post  'create/host' => 'hosts#quick_create', :as => :quick_create_host
     match 'create/host' => 'hosts#quick_new', :as => :quick_new_host
-    post  'destroy/host/:ip' => 'hosts#quick_destory', :as => :quick_destroy_host
+    post 'destroy/host' => 'hosts#quick_destory', :as => :quick_destroy_host
     resources :ddns_keys
     resources :subnets do
       resources :range_ips
@@ -17,6 +17,9 @@ DhcpControl::Application.routes.draw do
       end
     end
   end
+  
+  post '/api/host/create'  => 'hosts#quick_create_api', :as => :quick_create_host_api
+  post '/api/host/destroy'  => 'hosts#quick_destory_api', :as => :quick_destroy_host_api
 
   match '/about' => 'about#page', :as => :about
 
