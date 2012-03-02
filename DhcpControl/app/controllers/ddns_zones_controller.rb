@@ -1,4 +1,6 @@
 class DdnsZonesController < ApplicationController
+  before_filter :authenticate
+  
   # GET /ddns_zones
   # GET /ddns_zones.json
   def index

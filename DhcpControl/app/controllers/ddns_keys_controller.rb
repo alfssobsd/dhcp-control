@@ -1,4 +1,6 @@
 class DdnsKeysController < ApplicationController
+  before_filter :authenticate
+    
   # GET /ddns_keys
   # GET /ddns_keys.json
   def index
